@@ -4,7 +4,12 @@ import FormContact from "../components/FormContact";
 export default function Contact() {
   return (
     <>
-      <FormContact />
+      <header>
+        <h1>Contacta conmigo</h1>
+      </header>
+      <section>
+        <FormContact />
+      </section>
     </>
   );
 }

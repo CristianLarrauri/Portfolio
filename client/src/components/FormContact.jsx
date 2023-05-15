@@ -69,39 +69,36 @@ export default function FormContact() {
 
   return (
     <>
-      <div>
-        <h3>Contacta conmigo</h3>
-        <form onSubmit={sendEmail}>
-          <label>Nombre: </label>
+      <form onSubmit={sendEmail}>
+        <label>Nombre: </label>
 
-          <input type="text" name="user_name" onChange={handleChange} />
+        <input type="text" name="user_name" onChange={handleChange} />
 
-          <label>Email</label>
-          <input type="email" name="user_email" onChange={handleChange} />
+        <label>Email</label>
+        <input type="email" name="user_email" onChange={handleChange} />
 
-          <label>Mensaje</label>
-          <textarea
-            name="user_message"
-            id=""
-            cols="30"
-            rows="10"
-            onChange={handleChange}
-          ></textarea>
+        <label>Mensaje</label>
+        <textarea
+          name="user_message"
+          id=""
+          cols="30"
+          rows="10"
+          onChange={handleChange}
+        ></textarea>
 
-          {formErrors.user_email ||
-          formErrors.user_name ||
-          formErrors.user_message ||
-          input.user_name === "" ||
-          input.user_email === "" ||
-          input.user_message === "" ? (
-            <h5>Por favor, complete correctamente los campos requeridos</h5>
-          ) : (
-            <div>
-              <button>Send email</button>
-            </div>
-          )}
-        </form>
-      </div>
+        {formErrors.user_email ||
+        formErrors.user_name ||
+        formErrors.user_message ||
+        input.user_name === "" ||
+        input.user_email === "" ||
+        input.user_message === "" ? (
+          <h5>Por favor, complete correctamente los campos requeridos</h5>
+        ) : (
+          <div>
+            <button>Send email</button>
+          </div>
+        )}
+      </form>
     </>
   );
 }
