@@ -1,40 +1,44 @@
 import React from "react";
 import CardProject from "../components/CardProject";
+import imgLaReserva from "../images/ProjectLaReserva.jpg";
+import imgPyDInventario from "../images/ProjectPyDInventario.jpg";
+import imgPokeApp from "../images/ProjectPokeApp.jpg";
 
 export default function Projects() {
   return (
     <>
-      <header>
+      <header className="flex flex-col justify-center items-center text-4xl font-bold text-grisClaro-0 p-5">
         <h1>Proyectos y colaboraciones</h1>
       </header>
-      <section>
+      <section className="flex flex-col justify-around items-center gap-7 p-10">
         <CardProject
-          image={""}
+          image={imgPyDInventario}
+          link={"https://inventario-frontend-six.vercel.app/"}
           title={"P&D Inventario"}
           role={"Backend"}
-          description={"Aplicación web para gestionar stock y producción"}
+          description={"Aplicación web para gestionar stock y producción."}
           technologies={
             "JavaScript | Node | Express | Sequelize | Postgres | Firebase "
           }
         />
 
         <CardProject
-          image={""}
+          image={imgLaReserva}
+          link={"https://henry-lareserva-front.vercel.app/"}
           title={"La Reserva"}
           role={"FullStack"}
-          description={
-            "Aplicación web para inscribirse a torneos de fútbol con opción de acceder a la información del mismo (tabla de posiciones y goleadores)"
-          }
+          description={"Aplicación web para inscribirse a torneos de fútbol."}
           technologies={
             "JavaScript | NodeJS | Express | Sequelize | Postgres | React | Redux | Tailwind |  Mercadopago | Auth0 | Cloudinary"
           }
         />
 
         <CardProject
-          image={""}
+          image={imgPokeApp}
+          link={"https://henry-pokemon-frontend.vercel.app/"}
           title={"PokeApp"}
           role={"FullStack"}
-          description={"Aplicación web informativa sobre Pokémon"}
+          description={"Aplicación web informativa sobre Pokémon."}
           technologies={
             "JavaScript | React | Redux | CSS | Node | Express | Sequelize | Postgres"
           }
