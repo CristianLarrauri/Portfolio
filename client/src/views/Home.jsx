@@ -20,11 +20,11 @@ export default function Home() {
           <h2 className="text-xl text-lilaClaro-0 animate__animated animate__fadeInDown animate__delay-1s">
             vivo en Córdoba-Argentina y soy desarrollador Full-Stack.
           </h2>
-          <p className="text-grisClaro-0 text-sm animate__animated animate__fadeInDown animate__delay-2s">
+          <p className="text-grisClaro-0 text-m animate__animated animate__fadeInDown animate__delay-2s">
             Tengo experiencia en liderazgo de grupos en distintos ambitos, por
             lo cual la organizacion y el trabajo en equipo son mi fuerte.
           </p>
-          <p className="text-grisClaro-0 text-sm animate__animated animate__fadeInDown animate__delay-3s">
+          <p className="text-grisClaro-0 text-m animate__animated animate__fadeInDown animate__delay-3s">
             En mi encontraras una persona proactiva, responsable y con la
             curiosidad como motor del aprendizaje.
           </p>
