@@ -69,20 +69,31 @@ export default function FormContact() {
 
   return (
     <>
-      <form onSubmit={sendEmail}>
-        <label>Nombre: </label>
-
-        <input type="text" name="user_name" onChange={handleChange} />
-
-        <label>Email</label>
-        <input type="email" name="user_email" onChange={handleChange} />
-
-        <label>Mensaje</label>
+      <form
+        className="border border-lilaClaro-0 rounded-2xl flex flex-col p-10 w-2/3 h-2/3 gap-5"
+        onSubmit={sendEmail}
+      >
+        <input
+          className="border border-lilaClaro-0 rounded-xl bg-transparent text-white "
+          type="text"
+          name="user_name"
+          placeholder="Nombre"
+          onChange={handleChange}
+        />
+        <input
+          className="border border-lilaClaro-0 rounded-xl bg-transparent text-white "
+          type="email"
+          name="user_email"
+          placeholder="Email"
+          onChange={handleChange}
+        />
         <textarea
+          className="border border-lilaClaro-0 rounded-xl bg-transparent text-white "
           name="user_message"
           id=""
           cols="30"
           rows="10"
+          placeholder="Mensaje"
           onChange={handleChange}
         ></textarea>
 
@@ -92,10 +103,17 @@ export default function FormContact() {
         input.user_name === "" ||
         input.user_email === "" ||
         input.user_message === "" ? (
-          <h5>Por favor, complete correctamente los campos requeridos</h5>
+          <p className="text-grisClaro-0 text-center">
+            Por favor, complete correctamente los campos requeridos.
+          </p>
         ) : (
-          <div>
-            <button>Send email</button>
+          <div className="flex justify-end">
+            <button
+              className="border border-lilaClaro-0 rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 hover:text-lilaClaro-0 hover:font-bold"
+              onClick={sendEmail}
+            >
+              Enviar
+            </button>
           </div>
         )}
       </form>
