@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "animate.css";
 
 export default function CardAboutTech({ icon, title, content }) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [animateFlipInY, setAnimateFlipInY] = useState(false);
 
   const handleCardClick = () => {
     setIsFlipped(!isFlipped);
+    setAnimateFlipInY(true);
+    setTimeout(() => {
+      setAnimateFlipInY(false);
+    }, 500);
   };
+
+  // useEffect(() => {}, [isFlipped]);
 
   return (
     <div
-      className={`border border-lilaClaro-0 w-80 h-80 flex flex-col justify-between text-center items-center p-6 rounded-2xl hover:scale-105 ${
-        isFlipped ? "animate__animated animate__flipInY" : ""
+      className={`border border-lilaClaro-0 w-80 h-80 flex flex-col justify-between text-center items-center p-6 rounded-2xl hover:scale-105 animate__animated ${
+        animateFlipInY ? "animate__flipInY" : ""
       }`}
       onClick={handleCardClick}
     >
