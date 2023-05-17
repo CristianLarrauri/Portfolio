@@ -1,6 +1,6 @@
 import React from "react";
 import GitHub from "../components/GitHub.jsx";
-import imgPortfolio from "../images/imgPrueba1.png";
+import imgPortfolio from "../images/imgPerfil.png";
 
 export default function Home() {
   return (
