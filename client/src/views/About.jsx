@@ -15,17 +15,36 @@ export default function About() {
         <CardAboutTech
           icon={<AiFillTool className="w-full h-full" />}
           title="Herramientas"
-          content="Visual Studio Code | Android Studio | Git | GitHub | Postman | Railway | Vercel"
+          content={[
+            "Visual Studio Code",
+            "Android Studio",
+            "Git",
+            " GitHub",
+            "Postman",
+            " Railway",
+            "Vercel",
+          ]}
         />
         <CardAboutTech
           icon={<TfiWorld className="w-full h-full" />}
           title="Web"
-          content="Javascript | Postgres | Sequelize | MongoDB | Mongoose | NodeJS | Express | React | Redux | Tailwind"
+          content={[
+            "Javascript",
+            "PostgreSQL",
+            "Sequelize",
+            "MongoDB",
+            "Mongoose",
+            "NodeJS",
+            "Express",
+            "React",
+            "Redux",
+            "Tailwind",
+          ]}
         />
         <CardAboutTech
           icon={<AiFillAndroid className="w-full h-full" />}
           title="Android"
-          content="Kotlin | XML"
+          content={["Kotlin ", " XML"]}
         />
         <CardAboutTech
           icon={<FaGraduationCap className="w-full h-full" />}
