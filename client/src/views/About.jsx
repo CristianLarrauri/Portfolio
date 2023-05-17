@@ -1,7 +1,9 @@
 import React from "react";
 import CardAboutTech from "../components/CardAboutTech";
-import CardAboutStudies from "../components/CardAboutStudies";
-import CardAboutLanguages from "../components/CardAboutLanguages";
+import { AiFillTool, AiFillAndroid } from "react-icons/ai";
+import { TfiWorld } from "react-icons/tfi";
+import { FaGraduationCap } from "react-icons/fa";
+import { BsFillChatDotsFill } from "react-icons/bs";
 
 export default function About() {
   return (
@@ -11,20 +13,30 @@ export default function About() {
       </header>
       <section className="flex justify-center gap-7 p-10 text-white">
         <CardAboutTech
-          img=""
+          icon={<AiFillTool className="w-full h-full" />}
           title="Herramientas"
           content="Visual Studio Code | Android Studio | Git | GitHub | Postman | Railway | Vercel"
         />
         <CardAboutTech
-          img=""
+          icon={<TfiWorld className="w-full h-full" />}
           title="Web"
-          content="Javascript | HTML | CSS | Postgres | Sequelize | MongoDB | Mongoose | NodeJS | Express | React | Redux"
+          content="Javascript | Postgres | Sequelize | MongoDB | Mongoose | NodeJS | Express | React | Redux | Tailwind"
         />
-        <CardAboutTech img="" title="Android" content="Kotlin | XML" />
-      </section>
-      <section className="flex flex-col justify-center items-center text-white gap-10 ">
-        <CardAboutStudies />
-        <CardAboutLanguages />
+        <CardAboutTech
+          icon={<AiFillAndroid className="w-full h-full" />}
+          title="Android"
+          content="Kotlin | XML"
+        />
+        <CardAboutTech
+          icon={<FaGraduationCap className="w-full h-full" />}
+          title="Estudios"
+          content={["Web FullStack | Henry", "Web FullStack | Henry"]}
+        />
+        <CardAboutTech
+          icon={<BsFillChatDotsFill className="w-full h-full" />}
+          title="Idiomas"
+          content={["Español | Nativo"]}
+        />
       </section>
     </>
   );
