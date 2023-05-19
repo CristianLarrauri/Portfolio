@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
+import { Document, Page, pdfjs } from "react-pdf";
 import pdfUrl from "../assets/Resume.pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const PDFPreview = () => {
   const [numPages, setNumPages] = useState(null);
@@ -28,14 +29,16 @@ const PDFPreview = () => {
         <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} />
         </Document>
+      </header>
+      <section>
+        {pageNumber > 1 && <button onClick={changePageBack}>Anterior</button>}
         <p>
           Page {pageNumber} of {numPages}
         </p>
-        {pageNumber > 1 && <button onClick={changePageBack}>Anterior</button>}
         {pageNumber < numPages && (
           <button onClick={changePageNext}>Siguiente</button>
         )}
-      </header>
+      </section>
     </div>
   );
 };
