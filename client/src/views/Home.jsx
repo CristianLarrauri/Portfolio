@@ -21,8 +21,8 @@ export default function Home() {
             vivo en Córdoba-Argentina y soy desarrollador Full-Stack.
           </h2>
           <p className="text-grisClaro-0 text-m animate__animated animate__fadeInDown animate__delay-2s">
-            Tengo experiencia en liderazgo de grupos en distintos ambitos, por
-            lo cual la organizacion y el trabajo en equipo son mi fuerte.
+            Tengo experiencia en liderazgo de grupos en distintos ámbitos, por
+            lo cual la organización y el trabajo en equipo son mi fuerte.
           </p>
           <p className="text-grisClaro-0 text-m animate__animated animate__fadeInDown animate__delay-3s">
             En mi encontraras una persona proactiva, responsable y con la

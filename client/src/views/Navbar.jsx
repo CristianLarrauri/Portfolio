@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 export default function Navbar() {
   const navOption = [
     ["Inicio", "/"],
-    ["Sobre Mi", "/sobremi"],
+    ["Sobre Mí", "/sobremi"],
     ["Proyectos", "/proyectos"],
     ["Contacto", "/contacto"],
   ];

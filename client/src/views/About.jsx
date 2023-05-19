@@ -49,7 +49,7 @@ export default function About() {
         <CardAboutTech
           icon={<FaGraduationCap className="w-full h-full" />}
           title="Estudios"
-          content={["Web FullStack | Henry", "Web FullStack | Henry"]}
+          content={["Web FullStack | Henry", "Android | Autodidacta"]}
         />
         <CardAboutTech
           icon={<BsFillChatDotsFill className="w-full h-full" />}
