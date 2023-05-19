@@ -7,6 +7,7 @@ export default function Navbar() {
     ["Sobre Mí", "/sobremi"],
     ["Proyectos", "/proyectos"],
     ["Contacto", "/contacto"],
+    ["Hoja de vida", "/cv"],
   ];
 
   const [isHover, setIsHover] = useState(false);
