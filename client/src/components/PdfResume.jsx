@@ -15,29 +15,39 @@ const PDFPreview = () => {
     setPageNumber((prevPageNumber) => prevPageNumber + offSet);
   };
 
-  const changePageBack = () => {
+  const handlePrev = () => {
     changePage(-1);
   };
 
-  const changePageNext = () => {
+  const handleNext = () => {
     changePage(+1);
   };
 
   return (
-    <div>
-      <header>
+    <div className="border border-lilaClaro-0 rounded-2xl p-10 flex flex-col items-center">
+      <section>
+        <p className="flex px-5 text-gray-400 justify-end">
+          {pageNumber} de {numPages}
+        </p>
         <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} />
         </Document>
-      </header>
-      <section>
-        {pageNumber > 1 && <button onClick={changePageBack}>Anterior</button>}
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
-        {pageNumber < numPages && (
-          <button onClick={changePageNext}>Siguiente</button>
-        )}
+      </section>
+      <section className="flex">
+        <button
+          className="mx-5 text-gray-400 hover:scale-105 hover:text-lilaClaro-0 hover:font-bold"
+          onClick={handlePrev}
+          disabled={pageNumber === 1}
+        >
+          {"<"}
+        </button>
+        <button
+          className="mx-5 text-gray-400 hover:scale-105 hover:text-lilaClaro-0 hover:font-bold"
+          onClick={handleNext}
+          disabled={pageNumber === numPages}
+        >
+          {">"}
+        </button>
       </section>
     </div>
   );

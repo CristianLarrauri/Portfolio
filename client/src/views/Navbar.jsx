@@ -6,8 +6,8 @@ export default function Navbar() {
     ["Inicio", "/"],
     ["Sobre Mí", "/sobremi"],
     ["Proyectos", "/proyectos"],
+    ["CV", "/cv"],
     ["Contacto", "/contacto"],
-    ["Hoja de vida", "/cv"],
   ];
 
   const [isHover, setIsHover] = useState(false);
@@ -33,15 +33,15 @@ export default function Navbar() {
           to={"/"}
           className="special-underline focus:scale-110 focus:text-lilaClaro-0"
         >
-          <strong className={className}>[</strong> CristianLarrauri{" "}
-          <strong className={className}>]</strong>
+          <strong className={className}>{"{"}</strong> CristianLarrauri{" "}
+          <strong className={className}>{"}"}</strong>
         </Link>
       </span>
       <ul className="flex gap-4 ">
         {navOption.map(([opt, url]) => (
           <li
             key={url}
-            className="text-gray-400 hover:scale-110 hover:text-lilaClaro-0 hover:font-bold"
+            className="text-gray-400 mx-1 hover:scale-110 hover:text-lilaClaro-0 hover:font-bold"
           >
             <NavLink to={url}>{opt}</NavLink>
           </li>
