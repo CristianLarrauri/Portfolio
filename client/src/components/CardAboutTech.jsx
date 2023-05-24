@@ -17,7 +17,7 @@ export default function CardAboutTech({ icon, title, content }) {
 
   return (
     <div
-      className={`border border-lilaClaro-0 w-80 h-80 flex flex-col justify-between text-center items-center p-6 rounded-2xl hover:scale-105 animate__animated ${
+      className={`border border-lilaClaro-0 w-80 h-80 flex flex-col justify-between text-center items-center p-6 rounded-2xl hover:scale-105 cursor-pointer animate__animated ${
         animateFlipInY ? "animate__flipInY" : ""
       }`}
       onClick={handleCardClick}
