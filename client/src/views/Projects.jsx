@@ -3,6 +3,7 @@ import CardProject from "../components/CardProject";
 import imgLaReserva from "../images/ProjectLaReserva.jpg";
 import imgPyDInventario from "../images/ProjectPyDInventario.jpg";
 import imgPokeApp from "../images/ProjectPokeApp.jpg";
+import imgPizzasGalacticas from "../images/imgPizzasGalacticas.png";
 
 export default function Projects() {
   return (
@@ -11,6 +12,14 @@ export default function Projects() {
         <h1>Proyectos y colaboraciones</h1>
       </header>
       <section className="flex flex-col justify-around items-center gap-7 p-10">
+        <CardProject
+          image={imgPizzasGalacticas}
+          link={"https://pizzasgalacticas.vercel.app/"}
+          title={"Pizzas Galácticas Delivery"}
+          role={"Frontend"}
+          description={"Aplicación web para pedir delivery de Pizzas."}
+          technologies={"JavaScript | React | Redux | Tailwind | Firebase "}
+        />
         <CardProject
           image={imgPyDInventario}
           link={"https://inventario-frontend-six.vercel.app/"}
