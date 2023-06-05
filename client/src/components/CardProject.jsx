@@ -13,7 +13,7 @@ export default function CardProject({
       <div className="w-1/3 h-full flex flex-col items-center justify-around">
         <a className=" w-4/5 h-4/5 hover:scale-105" href={link} target="blank">
           <img
-            className="border border-lilaClaro-0 rounded-2xl w-full h-full"
+            className="border object-cover border-lilaClaro-0  rounded-2xl w-full h-full"
             src={image}
             alt={title}
           />

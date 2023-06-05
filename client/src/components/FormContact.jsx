@@ -74,21 +74,21 @@ export default function FormContact() {
         onSubmit={sendEmail}
       >
         <input
-          className="border border-lilaClaro-0 rounded-xl bg-transparent text-white "
+          className="border pl-[7px] border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none"
           type="text"
           name="user_name"
           placeholder="Nombre"
           onChange={handleChange}
         />
         <input
-          className="border border-lilaClaro-0 rounded-xl bg-transparent text-white "
+          className="border pl-[7px] border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none"
           type="email"
           name="user_email"
           placeholder="Email"
           onChange={handleChange}
         />
         <textarea
-          className="border border-lilaClaro-0 rounded-xl bg-transparent text-white "
+          className="border pl-[7px] border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none "
           name="user_message"
           id=""
           cols="30"
