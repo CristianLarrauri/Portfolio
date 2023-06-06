@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./views/Navbar";
 import Home from "./views/Home";
 import About from "./views/About";
@@ -9,7 +9,7 @@ import Resume from "./views/Resume";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route exact path="/" Component={Home} />
@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/cv" Component={Resume} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
