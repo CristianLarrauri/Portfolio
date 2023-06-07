@@ -17,23 +17,23 @@ export default function CardAboutTech({ icon, title, content }) {
 
   return (
     <div
-      className={`border border-lilaClaro-0 w-80 h-80 flex flex-col justify-between text-center items-center p-6 rounded-2xl hover:scale-105 cursor-pointer animate__animated ${
+      className={`h-72 w-56 p-6 flex flex-col justify-center text-center items-center bg-negro-0 border border-lilaClaro-0 rounded-2xl hover:scale-105 cursor-pointer animate__animated ${
         animateFlipInY ? "animate__flipInY" : ""
       }`}
       onClick={handleCardClick}
     >
       <header
-        className={`flex flex-col justify-between items-center h-3/5 w-3/5 ${
+        className={`h-72 w-64 flex flex-col justify-around items-center text-center ${
           isFlipped ? "hidden" : ""
         }`}
       >
-        <div className="text-grisClaro-0 w-2/3 h-2/3 flex justify-center items-center">
+        <div className="text-grisClaro-0 h-2/5 w-2/5 flex justify-center items-center text-center">
           {icon}
         </div>
         <h2 className="font-bold text-xl text-lilaClaro-0">{title}</h2>
       </header>
       <section
-        className={`${
+        className={`h-72 w-64 flex flex-col justify-start items-center text-center ${
           isFlipped ? "" : "hidden"
         } animate__animated animate__fadeIn`}
       >
