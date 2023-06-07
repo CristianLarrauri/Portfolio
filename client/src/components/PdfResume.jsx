@@ -24,16 +24,23 @@ const PDFPreview = () => {
   };
 
   return (
-    <div className="border border-lilaClaro-0 rounded-2xl p-10 flex flex-col items-center">
-      <section>
-        <p className="flex px-5 text-gray-400 justify-end">
+    <div className="h-full w-full lg:w-1/2 p-10 flex flex-col items-center text-center md:border border-lilaClaro-0 rounded-2xl">
+      <section className="h-full w-full flex flex-col justify-center items-center text-center">
+        <p className="h-full w-full flex justify-center items-center text-center px-5 text-gray-400">
           {pageNumber} de {numPages}
         </p>
-        <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
+        <Document
+          file={pdfUrl}
+          onLoadSuccess={onDocumentLoadSuccess}
+          className="h-full w-full flex justify-center items-center text-center"
+        >
+          <Page
+            pageNumber={pageNumber}
+            className="h-full w-full flex flex-col justify-center items-center text-center"
+          />
         </Document>
       </section>
-      <section className="flex">
+      <section className="flex justify-center items-center text-center">
         <button
           className="mx-5 text-gray-400 hover:scale-105 hover:text-lilaClaro-0 hover:font-bold"
           onClick={handlePrev}
