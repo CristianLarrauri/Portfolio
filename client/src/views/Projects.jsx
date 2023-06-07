@@ -7,11 +7,11 @@ import imgPizzasGalacticas from "../images/imgPizzasGalacticas.png";
 
 export default function Projects() {
   return (
-    <>
-      <header className="flex flex-col justify-center items-center text-4xl font-bold text-grisClaro-0 p-5">
+    <div className="h-full w-full flex flex-col justify-center items-center text-center">
+      <header className="h-full w-full flex flex-col justify-center items-center text-center text-4xl font-bold text-grisClaro-0 p-5">
         <h1>Proyectos y colaboraciones</h1>
       </header>
-      <section className="flex flex-col justify-around items-center gap-7 p-10">
+      <section className="h-full w-full p-10 flex flex-col justify-around items-center text-center gap-7">
         <CardProject
           image={imgPizzasGalacticas}
           link={"https://pizzasgalacticas.vercel.app/"}
@@ -53,6 +53,6 @@ export default function Projects() {
           }
         />
       </section>
-    </>
+    </div>
   );
 }

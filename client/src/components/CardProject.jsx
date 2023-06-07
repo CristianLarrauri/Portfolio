@@ -9,24 +9,32 @@ export default function CardProject({
   technologies,
 }) {
   return (
-    <div className="border border-lilaClaro-0 text-white rounded-2xl w-2/3 h-72 flex p-4">
-      <div className="w-1/3 h-full flex flex-col items-center justify-around">
-        <a className=" w-4/5 h-4/5 hover:scale-105" href={link} target="blank">
+    <a
+      href={link}
+      target="blank"
+      className="h-96 w-full md:h-72 md:w-full lg:h-72 lg:w-2/3 p-4 flex flex-col md:flex-row justify-evenly items-center text-center border border-lilaClaro-0 bg-negro-0 text-white rounded-2xl hover:scale-105 gap-4"
+    >
+      <section className="h-full w-full md:h-full md:w-2/5 lg:h-full lg:w-1/3 flex flex-col justify-around items-center text-center">
+        <div className="h-full w-full">
           <img
-            className="border object-cover border-lilaClaro-0  rounded-2xl w-full h-full"
+            className="h-full w-full lg:h-full lg:w-full border border-lilaClaro-0 object-cover rounded-2xl"
             src={image}
             alt={title}
           />
-        </a>
-      </div>
-      <div className="w-2/3 h-full flex flex-col items-center justify-evenly">
-        <section className="items-center text-center flex flex-col gap-5">
-          <h3 className="font-bold text-2xl mb-4 text-lilaClaro-0">{title}</h3>
-          <p>{description}</p>
-          <p className="text-grisOscuro-0">{technologies}</p>
-          <p>{role}</p>
-        </section>
-      </div>
-    </div>
+        </div>
+      </section>
+      <section className="h-full w-full md:w-2/3 p-5 flex flex-col">
+        <div className="h-full w-full flex flex-col justify-evenly gap-5">
+          <h3 className="h-full w-full flex justify-center items-start text-center font-bold text-xs md:text-2xl text-lilaClaro-0">
+            {title}
+          </h3>
+          <p className="text-xs md:text-base">{description}</p>
+          <p className="text-xs md:text-base text-grisOscuro-0">
+            {technologies}
+          </p>
+          <p className="text-xs md:text-base">{role}</p>
+        </div>
+      </section>
+    </a>
   );
 }
