@@ -68,27 +68,27 @@ export default function FormContact() {
   };
 
   return (
-    <>
+    <div className="h-full w-full flex flex-col justify-center items-center text-center">
       <form
-        className="border border-lilaClaro-0 rounded-2xl flex flex-col p-10 w-2/3 h-2/3 gap-5"
+        className="h-2/3 w-full md:w-2/3 p-10 flex flex-col border border-lilaClaro-0 gap-5 rounded-2xl"
         onSubmit={sendEmail}
       >
         <input
-          className="border pl-[7px] border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none"
+          className="pl-[7px] border border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none"
           type="text"
           name="user_name"
           placeholder="Nombre"
           onChange={handleChange}
         />
         <input
-          className="border pl-[7px] border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none"
+          className="pl-[7px] border border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none"
           type="email"
           name="user_email"
           placeholder="Email"
           onChange={handleChange}
         />
         <textarea
-          className="border pl-[7px] border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none "
+          className="pl-[7px] border border-lilaClaro-0 rounded-xl bg-transparent text-white outline-none "
           name="user_message"
           id=""
           cols="30"
@@ -117,6 +117,6 @@ export default function FormContact() {
           </div>
         )}
       </form>
-    </>
+    </div>
   );
 }
