@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="flex justify-around p-5 animate__animated animate__fadeInDown animate__delay-5s"
+      className="h-full w-full p-5 flex justify-around animate__animated animate__fadeInDown animate__delay-5s"
       id="sidebar"
     >
       <span

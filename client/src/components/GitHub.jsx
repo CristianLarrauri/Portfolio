@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 
 export default function GitHub() {
   const theme = {
-    dark: ["#A1A1AA80", "#84a5d4", "#5281be", "#2c5c9f", "#1d3f7c"],
+    dark: ["#1f1f20", "#84a5d4", "#5281be", "#2c5c9f", "#1d3f7c"],
   };
   return (
     <div className="flex justify-center p-10 text-grisClaro-0">

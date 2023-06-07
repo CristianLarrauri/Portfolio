@@ -70,7 +70,7 @@ export default function FormContact() {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center text-center">
       <form
-        className="h-2/3 w-full md:w-2/3 p-10 flex flex-col border border-lilaClaro-0 gap-5 rounded-2xl"
+        className="h-2/3 w-full md:w-2/3 p-10 flex flex-col bg-negro-0 border border-lilaClaro-0 gap-5 rounded-2xl"
         onSubmit={sendEmail}
       >
         <input

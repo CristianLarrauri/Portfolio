@@ -24,7 +24,7 @@ const PDFPreview = () => {
   };
 
   return (
-    <div className="h-full w-full lg:w-1/2 p-10 flex flex-col items-center text-center md:border border-lilaClaro-0 rounded-2xl">
+    <div className="h-full w-full lg:w-1/2 p-10 flex flex-col items-center text-center bg-negro-0 md:border border-lilaClaro-0 rounded-2xl">
       <section className="h-full w-full flex flex-col justify-center items-center text-center">
         <p className="h-full w-full flex justify-center items-center text-center px-5 text-gray-400">
           {pageNumber} de {numPages}
