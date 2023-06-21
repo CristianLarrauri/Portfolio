@@ -8,7 +8,7 @@ html {
 }
 
 #sidebar a.active {
-  color: #567ebb;
+  color: #0969da;
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
