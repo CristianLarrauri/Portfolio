@@ -11,7 +11,7 @@ export default function Navbar() {
   ];
 
   const [isHover, setIsHover] = useState(false);
-  const className = isHover ? "text-grisClaro-0" : "text-lilaClaro-0";
+  const className = isHover ? "text-grisClaro-0" : "text-azulClaro-0";
   const handleMouseEnter = () => {
     setIsHover(true);
   };
@@ -25,13 +25,13 @@ export default function Navbar() {
       id="sidebar"
     >
       <span
-        className="text-2xl font-bold text-gray-400 hover:text-lilaClaro-0 hover:scale-110 transform transition-transform"
+        className="text-2xl font-bold text-gray-400 hover:text-azulClaro-0 hover:scale-110 transform transition-transform"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <Link
           to={"/"}
-          className="special-underline focus:scale-110 focus:text-lilaClaro-0"
+          className="special-underline focus:scale-110 focus:text-azulClaro-0"
         >
           <strong className={className}>{"{"}</strong> CristianLarrauri{" "}
           <strong className={className}>{"}"}</strong>
@@ -41,7 +41,7 @@ export default function Navbar() {
         {navOption.map(([opt, url]) => (
           <li
             key={url}
-            className="text-gray-400 mx-1 hover:scale-110 transform transition-transform hover:text-lilaClaro-0 hover:font-bold"
+            className="text-gray-400 mx-1 hover:scale-110 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
           >
             <NavLink to={url}>{opt}</NavLink>
           </li>

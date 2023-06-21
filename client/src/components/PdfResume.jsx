@@ -24,7 +24,7 @@ const PDFPreview = () => {
   };
 
   return (
-    <div className="h-full w-full lg:w-1/2 p-10 flex flex-col items-center text-center bg-negro-0 md:border border-lilaClaro-0 rounded-2xl">
+    <div className="h-full w-full lg:w-1/2 p-10 flex flex-col items-center text-center bg-negro-0 md:border border-azulClaro-0 rounded-2xl">
       <section className="h-full w-full flex flex-col justify-center items-center text-center">
         <p className="h-full w-full flex justify-center items-center text-center px-5 text-gray-400">
           {pageNumber} de {numPages}
@@ -42,14 +42,14 @@ const PDFPreview = () => {
       </section>
       <section className="flex justify-center items-center text-center">
         <button
-          className="mx-5 text-gray-400 hover:scale-105 transform transition-transform hover:text-lilaClaro-0 hover:font-bold"
+          className="mx-5 text-gray-400 hover:scale-105 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
           onClick={handlePrev}
           disabled={pageNumber === 1}
         >
           {"<"}
         </button>
         <button
-          className="mx-5 text-gray-400 hover:scale-105 transform transition-transform hover:text-lilaClaro-0 hover:font-bold"
+          className="mx-5 text-gray-400 hover:scale-105 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
           onClick={handleNext}
           disabled={pageNumber === numPages}
         >

@@ -17,7 +17,7 @@ export default function CardAboutTech({ icon, title, content }) {
 
   return (
     <div
-      className={`h-72 w-56 p-6 flex flex-col justify-center text-center items-center bg-negro-0 border border-lilaClaro-0 rounded-2xl hover:scale-105 transform transition-transform cursor-pointer animate__animated ${
+      className={`h-72 w-56 p-6 flex flex-col justify-center text-center items-center bg-negro-0 border border-azulClaro-0 rounded-2xl hover:scale-105 transform transition-transform cursor-pointer animate__animated ${
         animateFlipInY ? "animate__flipInY" : ""
       }`}
       onClick={handleCardClick}
@@ -30,7 +30,7 @@ export default function CardAboutTech({ icon, title, content }) {
         <div className="text-grisClaro-0 h-2/5 w-2/5 flex justify-center items-center text-center">
           {icon}
         </div>
-        <h2 className="font-bold text-xl text-lilaClaro-0">{title}</h2>
+        <h2 className="font-bold text-xl text-azulClaro-0">{title}</h2>
       </header>
       <section
         className={`h-72 w-64 flex flex-col justify-start items-center text-center ${

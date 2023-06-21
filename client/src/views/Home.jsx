@@ -10,14 +10,14 @@ export default function Home() {
           <img
             src={imgPortfolio}
             alt="imagen portada"
-            className="rounded-full w-auto h-80 border border-lilaClaro-0"
+            className="rounded-full w-auto h-80 border border-azulClaro-0"
           />
         </div>
         <div className="flex justify-center text-center items-center p-10 text-grisClaro-0 flex-col">
           <h1 className="text-4xl font-bold animate__animated animate__fadeInDown">
             Hola! Mi nombre es Cristian
           </h1>
-          <h2 className="text-xl text-lilaClaro-0 animate__animated animate__fadeInDown animate__delay-1s">
+          <h2 className="text-xl text-azulClaro-0 animate__animated animate__fadeInDown animate__delay-1s">
             vivo en Córdoba-Argentina y soy desarrollador Full-Stack.
           </h2>
           <p className="text-grisClaro-0 text-m animate__animated animate__fadeInDown animate__delay-2s">
