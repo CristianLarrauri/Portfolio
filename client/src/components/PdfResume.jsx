@@ -42,14 +42,14 @@ const PDFPreview = () => {
       </section>
       <section className="flex justify-center items-center text-center">
         <button
-          className="mx-5 text-gray-400 hover:scale-105 hover:text-lilaClaro-0 hover:font-bold"
+          className="mx-5 text-gray-400 hover:scale-105 transform transition-transform hover:text-lilaClaro-0 hover:font-bold"
           onClick={handlePrev}
           disabled={pageNumber === 1}
         >
           {"<"}
         </button>
         <button
-          className="mx-5 text-gray-400 hover:scale-105 hover:text-lilaClaro-0 hover:font-bold"
+          className="mx-5 text-gray-400 hover:scale-105 transform transition-transform hover:text-lilaClaro-0 hover:font-bold"
           onClick={handleNext}
           disabled={pageNumber === numPages}
         >

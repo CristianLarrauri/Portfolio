@@ -109,7 +109,7 @@ export default function FormContact() {
         ) : (
           <div className="flex justify-end">
             <button
-              className="border border-lilaClaro-0 rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 hover:text-lilaClaro-0 hover:font-bold"
+              className="border border-lilaClaro-0 rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 transform transition-transform hover:text-lilaClaro-0 hover:font-bold"
               onClick={sendEmail}
             >
               Enviar

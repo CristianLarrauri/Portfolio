@@ -12,7 +12,7 @@ export default function CardProject({
     <a
       href={link}
       target="blank"
-      className="h-96 w-full md:h-72 md:w-full lg:h-72 lg:w-2/3 p-4 flex flex-col md:flex-row justify-evenly items-center text-center border border-lilaClaro-0 bg-negro-0 text-white rounded-2xl hover:scale-105 gap-4"
+      className="h-96 w-full md:h-72 md:w-full lg:h-72 lg:w-2/3 p-4 flex flex-col md:flex-row justify-evenly items-center text-center border border-lilaClaro-0 bg-negro-0 text-white rounded-2xl hover:scale-105 transform transition-transform gap-4"
     >
       <section className="h-full w-full md:h-full md:w-2/5 lg:h-full lg:w-1/3 flex flex-col justify-around items-center text-center">
         <div className="h-full w-full">
