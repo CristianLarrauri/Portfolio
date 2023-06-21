@@ -12,7 +12,7 @@ export default function GitHub() {
         blockSize={15}
         blockMargin={5}
         fontSize={14}
-        theme={theme}
+        // theme={theme}
       />
     </div>
   );
