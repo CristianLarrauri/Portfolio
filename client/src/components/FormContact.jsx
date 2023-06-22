@@ -70,25 +70,25 @@ export default function FormContact() {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center text-center">
       <form
-        className="h-2/3 w-full md:w-2/3 p-10 flex flex-col bg-negro-0 border border-azulClaro-0 gap-5 rounded-2xl"
+        className="h-2/3 w-full md:w-2/3 p-10 flex flex-col bg-negro-0 shadow-lg shadow-celesteOscuro-0 gap-5 rounded-2xl"
         onSubmit={sendEmail}
       >
         <input
-          className="pl-[7px] border border-azulClaro-0 rounded-xl bg-transparent text-white outline-none"
+          className="pl-[7px] border-b-2 border-azulClaro-0 rounded-xl bg-transparent text-white outline-none"
           type="text"
           name="user_name"
           placeholder="Nombre"
           onChange={handleChange}
         />
         <input
-          className="pl-[7px] border border-azulClaro-0 rounded-xl bg-transparent text-white outline-none"
+          className="pl-[7px] border-b-2 border-azulClaro-0 rounded-xl bg-transparent text-white outline-none"
           type="email"
           name="user_email"
           placeholder="Email"
           onChange={handleChange}
         />
         <textarea
-          className="pl-[7px] border border-azulClaro-0 rounded-xl bg-transparent text-white outline-none "
+          className="pl-[7px] border-b-2 border-azulClaro-0 rounded-xl bg-transparent text-white outline-none "
           name="user_message"
           id=""
           cols="30"
@@ -109,7 +109,7 @@ export default function FormContact() {
         ) : (
           <div className="flex justify-end">
             <button
-              className="border border-azulClaro-0 rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
+              className="rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
               onClick={sendEmail}
             >
               Enviar

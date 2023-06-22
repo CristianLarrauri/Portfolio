@@ -10,7 +10,7 @@ export default function Home() {
           <img
             src={imgPortfolio}
             alt="imagen portada"
-            className="rounded-full w-auto h-80 border border-azulClaro-0"
+            className="rounded-full w-auto h-80 shadow-lg shadow-celesteOscuro-0"
           />
         </div>
         <div className="flex justify-center text-center items-center p-10 text-grisClaro-0 flex-col">
