@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { AiOutlineSend } from "react-icons/ai";
 
 export default function FormContact() {
   const [input, setInput] = useState({
@@ -109,10 +110,10 @@ export default function FormContact() {
         ) : (
           <div className="flex justify-end">
             <button
-              className="rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
+              className="h-12 w-12 rounded-xl p-3 mt-5 text-grisClaro-0 hover:scale-110 transform transition-transform hover:text-azulClaro-0 hover:font-bold"
               onClick={sendEmail}
             >
-              Enviar
+              <AiOutlineSend className="w-full h-full" />
             </button>
           </div>
         )}
