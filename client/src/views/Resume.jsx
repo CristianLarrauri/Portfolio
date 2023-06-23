@@ -1,5 +1,6 @@
 import React from "react";
 import PdfResume from "../components/PdfResume";
+import PdfResumeDownload from "../components/PdfResumeDownload";
 
 export default function Resume() {
   return (
@@ -9,6 +10,7 @@ export default function Resume() {
       </header>
       <section className="w-full flex justify-center gap-7 p-10">
         <PdfResume />
+        <PdfResumeDownload />
       </section>
     </div>
   );
